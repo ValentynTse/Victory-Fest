@@ -1,0 +1,411 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    color: #000;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-main {
+    padding-top: 63px;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+}
+
+.container {
+    max-width: 1260px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.menu {
+    display: flex;
+    gap: 56px
+}
+
+.menu-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-button {
+    padding: 20px 30px;
+    background-color: #7AE5FD;
+    border-radius: 30px;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.top {
+    background-color: #F1FDFF;
+    padding-top: 210px;
+    padding-bottom: 110px;
+    position: relative;
+    z-index: -2;
+    margin-bottom: 185px;
+}
+
+.top-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-title {
+    max-width: 700px;
+    font-weight: 800;
+    font-size: 93px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #9AD2DE;
+    margin-bottom: 65px;
+
+}
+
+.top-text {
+    max-width: 480px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.top-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.fest-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 72px;
+}
+
+.fest-header-title {
+    font-size: 60px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.fest-header-subtitle {
+    font-size: 27px;
+    text-align: center;
+}
+
+.fest-header-text {
+    max-width: 700px;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    color: #73A6B1;
+}
+
+.scenes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.scene-victory,
+.scene-music,
+.scene-children {
+    background: #F1FDFF;
+    border-radius: 10px;
+    padding: 50px 40px 70px 40px;
+}
+
+.scene-victory {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.scene-victory-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.scene-victory-title,
+.scene-music-title,
+.scene-children-title {
+    font-size: 46px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.scene-victory-subtitle {
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+.events {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.event-name {
+    margin-bottom: 10px;
+}
+
+.event-time {
+    color: #3D8C9D;
+}
+
+.scene-music-wrapper,
+.scene-children-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.scene-music-title,
+.scene-children-title {
+    margin-bottom: 45px;
+}
+
+.scene-img {
+    width: 585px;
+    height: 424px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.button {
+    display: block;
+    width: 262px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+    padding: 20px 30px;
+    background-color: #7AE5FD;
+    border-radius: 30px;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.presents {
+    background-image: url(./images/presents-img-bgd.png);
+    height: 738px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 70px;
+}
+
+.presents .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+    padding: 190px 155px 110px 70px;
+
+}
+
+.presents .container::before {
+    position: absolute;
+    content: "";
+    background-color: #F2FEFF;
+    border-radius: 10px;
+    width: 100%;
+    height: 277px;
+    z-index: -1;
+    left: 0px;
+    top: 270px;
+}
+
+.presents h3 {
+    font-size: 27px;
+    line-height: 33px;
+}
+
+.donat {
+    margin-bottom: 150px;
+}
+
+.donat-title {
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.donat-text {
+    max-width: 740px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #73A6B1;
+    margin-bottom: 70px;
+}
+
+.donat-goal {
+    font-size: 27px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 24px;
+
+}
+
+.donat-score {
+    font-size: 60px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 67px;
+}
+
+.donat-score span {
+    height: 62px;
+    width: 2px;
+    color: #9AD2DE;
+    margin: 0 13px;
+}
+
+/* FOOTER */
+.footer {
+    position: relative;
+    background-color: #F9FADF;
+    padding-top: 60px;
+}
+
+.footer-bgd {
+    position: absolute;
+    z-index: 1;
+    top: -80px;
+}
+
+.contacts {
+    margin: 0 auto;
+    max-width: 1040px;
+    position: relative;
+    z-index: 3;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.title {
+    display: block;
+    font-size: 60px;
+    line-height: 57px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 444px;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.phone-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.phone-text,
+.socials-text {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.mail-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 90px;
+    background-color: #fff;
+    padding: 50px 100px 50px 40px;
+    margin-bottom: 120px;
+}
+
+.mail-text {
+    font-size: 27px;
+    line-height: 120%;
+    margin-bottom: 40px;
+}
+
+.mail-info form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+
+.mail-info input {
+    width: 506px;
+    background: #F9FADF;
+    border: none;
+    border-radius: 61px;
+    padding: 21px 43px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px
+}
+
+.mail-info .form-button {
+    background-color: #7AE5FD;
+    text-transform: uppercase;
+}
