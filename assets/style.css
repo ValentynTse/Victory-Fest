@@ -113,6 +113,10 @@ a {
     top: 0;
 }
 
+.mobile-img {
+    display: none;
+}
+
 
 .fest-header {
     display: flex;
@@ -194,6 +198,10 @@ a {
 
 .event-time {
     color: #3D8C9D;
+}
+
+.scene-mobile {
+    display: none;
 }
 
 .scene-music-wrapper,
@@ -408,4 +416,192 @@ footer .container {
 .mail-info .form-button {
     background-color: #7AE5FD;
     text-transform: uppercase;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+.menu-btn {
+    width: 42px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-btn span {
+    height: 3px;
+    width: 100%;
+    background-color: #7AE5FD;
+}
+
+@media (max-width: 980px) {
+
+    .header-main {
+        padding-top: 0;
+    }
+
+    .menu-btn {
+        display: flex;
+        position: relative;
+        right: 20px;
+        top: 50px;
+        z-index: 6;
+    }
+
+    .menu {
+        position: absolute;
+        z-index: 5;
+        background-color: #151515;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding-top: 50px;
+        height: 100vh;
+        transform: translateY(-150%);
+        transition: transform .3s ease;
+    }
+
+    .menu-link {
+        color: white;
+    }
+
+    .top {
+        padding-top: 115px;
+        padding-bottom: 235px;
+        margin-bottom: 100px;
+    }
+
+    .nav img,
+    .top-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 220px;
+    }
+
+    .fest-header {
+        display: block;
+        padding-bottom: 60px;
+    }
+
+    .fest-header-title {
+        font-size: 50px;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .fest-header-title,
+    .fest-header-subtitle,
+    .fest-header-text {
+        text-align: start;
+    }
+
+    .fest-header-subtitle {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .fest-header-text {
+        font-size: 16px;
+    }
+
+    .scene-victory {
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+
+    .scene-music,
+    .scene-children {
+        display: none;
+    }
+
+
+
+    .scene-mobile {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        background: #F1FDFF;
+        border-radius: 10px;
+        padding: 50px 40px 70px 40px;
+    }
+
+    .scene-victory-subtitle {
+        margin-bottom: 45px;
+    }
+
+    .scene-mobile-title {
+        max-width: 500px;
+        font-size: 46px;
+        text-transform: uppercase;
+        margin-bottom: 45px;
+    }
+
+    .scene-img {
+        margin-bottom: 45px;
+    }
+
+
+}
+
+@media (max-width: 720px) {
+
+    .top {
+        padding-bottom: 400px;
+    }
+
+    .top-title {
+        max-width: 500px;
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+
+    .top-text {
+        max-width: 400px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .scene-victory,
+    .scene-mobile {
+        padding: 0;
+    }
+
+    .scene-victory-wrapper,
+    .scene-mobile-wrapper {
+        padding-left: 20px;
+        padding-bottom: 70px;
+    }
+
+    .scene-victory-title,
+    .scene-mobile-title {
+        font-size: 30px;
+    }
+
+    .scene-victory-subtitle {
+        font-size: 20px;
+    }
+
+    .fest a{
+        display: none;
+    }
+    .fest{
+        margin-bottom: 100px;
+        padding: 0 20px;
+    }
+
 }
